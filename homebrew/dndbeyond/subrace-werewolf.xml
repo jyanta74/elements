@@ -20,9 +20,7 @@
         </description>
         <sheet alt="Werewolf" display="false" />
         <rules>
-            <stat name="strength" value="1" />
 			<stat name="constitution" value="1" />
-			<stat name="charisma" value="1" />
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HEIGHTENED_SENSES" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_LYCAN_REGENERATION" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_CURSED_WEAKNESS" />
@@ -141,23 +139,21 @@
     <element name="Resilient Hide" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE">
         <supports>Hybrid Transformation Feature</supports>
         <description>
-            <p>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered. You gain a +3 bonus to your AC.</p>
+            <p>Only in Hybrid Form. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</p>
         </description>
         <sheet>
             <description>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</description>
         </sheet>
-        <rules>
-            <stat name="ac:misc" value="3" />
-        </rules>
+        <rules></rules>
     </element>
     <element name="Predatory Strikes" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_PREDATORY_STRIKES">
         <supports>Hybrid Transformation Feature</supports>
         <description>
             <p>Only used in Hybrid Form. This attack is considered magical. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.</p>
-            <p class="indent">Your unarmed strikes deal 1d6 slashing damage. This die increases to 1d8 at 11th level, and 1d10 at 18th level.</p>
+            <p class="indent">Your unarmed strikes deal 1d10 slashing damage.</p>
         </description>
         <sheet>
-            <description>When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action. (+{{predatory strikes:attack}} vs AC, 1d{{predatory strikes:damage}+{{predatory strikes:attack:ability}})</description>
+            <description>When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action. (+{{predatory strikes:attack}} vs AC, 1d10+{{predatory strikes:attack:ability}})</description>
         </sheet>
         <rules>
             <stat name="predatory strikes:attack:ability" value="strength:modifier" bonus="ability" />
@@ -170,7 +166,7 @@
     <element name="Beastly Precision" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_BEASTLY_PRECISION">
         <supports>Hybrid Transformation Feature</supports>
         <description>
-            <p>You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).</p>
+            <p>Only used in Hybrid Form. You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).</p>
         </description>
         <sheet>
             <description>You gain a +{{proficiency:half}} bonus to melee attack rolls made with your unarmed strikes.</description>
