@@ -9,7 +9,7 @@
 		</update>
     </info>
 
-    <element name="Werewolf" type="Sub Race" source="DnD Beyond" id="ID_WIKI_SUBRACE_WEREWOLF">
+    <element name="Werewolf" type="type="Race Variant"" source="DnD Beyond" id="ID_WIKI_SUBRACE_WEREWOLF">
         <supports>Human</supports>
         <description>
             <p>Werewolves are humans that have been transformed by a curse to become powerful beasts that stalk the night.</p>
@@ -18,13 +18,15 @@
                 <span class="feature">Heightened Senses.</span>Starting when you choose this archetype at 3rd level, you begin to adopt to the improved abilities or a natural predator. You gain advantage on any Wisdom (Perception) checks that rely on hearing or smell.<br/>
             </p>
         </description>
-        <setters>
-            <set name="sourceUrl">http://www.dandwiki.com/wiki/Rune_Dwarf_(Ruhn_Kadan)_(5e_Subrace)</set>
-        </setters>
-        <sheet alt="Ruhn Kadan" display="false" />
+        <sheet alt="Werewolf" display="false" />
         <rules>
-            <stat name="charisma" value="1" />
-            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_RUNE_DWARF_RUNIC_PROTECTION" />
+            <stat name="strength" value="1" />
+			<stat name="constitution" value="1" />
+			<stat name="charisma" value="1" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HEIGHTENED_SENSES" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_REGENERATION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_ADVANCED_TRANSFORMATION" />
         </rules>
     </element>
 	
