@@ -190,7 +190,7 @@
         </sheet>
         <rules></rules>
     </element>
-    <element name="Lycan Regeneration" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_ORDER_OF_THE_LYCAN_LYCAN_REGENERATION">
+    <element name="Lycan Regeneration" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_LYCAN_REGENERATION">
         <supports>Hybrid Transformation Feature</supports>
         <description>
             <p>At the start of each of your turns, you regain hit points equal to 1 + your Constitution modifier (minimum of 1) if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
@@ -203,7 +203,7 @@
             <stat name="lycan regeneration:hp" value="constitution:modifier" />
         </rules>
     </element>
-    <element name="Beastly Precision" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_ORDER_OF_THE_LYCAN_BEASTLY_PRECISION">
+    <element name="Beastly Precision" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_BEASTLY_PRECISION">
         <supports>Hybrid Transformation Feature</supports>
         <description>
             <p>You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).</p>
