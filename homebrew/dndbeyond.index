@@ -2,14 +2,14 @@
 <index>
 	<info>
 		<update version="0.0.1">
-			<file name="dndbeyond.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond.index" />
+			<file name="dndbeyond.index" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond.index" />
 		</update>
 	</info>
 	<files>
-		<file name="sources.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond/sources.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond/sources.xml" />
 
 		<!-- races -->
-		<file name="subrace-werewolf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond/subrace-werewolf.xml" />
+		<file name="subrace-werewolf.xml" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond/subrace-werewolf.xml" />
 		
 	</files>
 </index>

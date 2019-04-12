@@ -5,7 +5,7 @@
         <description>5e homebrew</description>
         <author url="https://www.dndbeyond.com/races/10435-werewolf">DnD Beyond</author>
         <update version="0.0.1">
-			<file name="subrace-werewolf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond/subrace-werewolf.xml" />
+			<file name="subrace-werewolf.xml" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond/subrace-werewolf.xml" />
 		</update>
     </info>
 

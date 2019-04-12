@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond/sources.xml" />
 		</update>
 	</info>
 	<element name="DnDBeyond" type="Source" source="Core" id="ID_DNDB_SOURCE_DNDBEYOND">
