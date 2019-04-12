@@ -9,7 +9,7 @@
 		</update>
     </info>
 
-    <element name="Werewolf" type="type="Race Variant"" source="DnD Beyond" id="ID_WIKI_SUBRACE_WEREWOLF">
+    <element name="Werewolf" type="Race Variant" source="DnD Beyond" id="ID_WIKI_SUBRACE_WEREWOLF">
         <supports>Human</supports>
         <description>
             <p>Werewolves are humans that have been transformed by a curse to become powerful beasts that stalk the night.</p>
