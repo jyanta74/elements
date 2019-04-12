@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Werewolf</name>
+        <description>5e homebrew</description>
+        <author url="https://www.dndbeyond.com/races/10435-werewolf">DnD Beyond</author>
+        <update version="0.0.1">
+			<file name="subrace-werewolf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond/subrace-werewolf.xml" />
+		</update>
+    </info>
+
+    <element name="Werewolf" type="Sub Race" source="DnD Beyond" id="ID_WIKI_SUBRACE_WEREWOLF">
+        <supports>Human</supports>
+        <description>
+            <p>Werewolves are humans that have been transformed by a curse to become powerful beasts that stalk the night.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Strength score increases by 1, Your Constitution score increases by 1, Your Charisma score increases by 1.<br/>
+                <span class="feature">Heightened Senses.</span>Starting when you choose this archetype at 3rd level, you begin to adopt to the improved abilities or a natural predator. You gain advantage on any Wisdom (Perception) checks that rely on hearing or smell.<br/>
+            </p>
+        </description>
+        <setters>
+            <set name="sourceUrl">http://www.dandwiki.com/wiki/Rune_Dwarf_(Ruhn_Kadan)_(5e_Subrace)</set>
+        </setters>
+        <sheet alt="Ruhn Kadan" display="false" />
+        <rules>
+            <stat name="charisma" value="1" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_RUNE_DWARF_RUNIC_PROTECTION" />
+        </rules>
+    </element>
+	
+	<element name="Heightened Senses" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_HEIGHTENED_SENSES">
+        <description>
+            <p>You begin to adopt to the improved abilities or a natural predator. You gain advantage on any Wisdom (Perception) checks that rely on hearing or smell.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on any Perception checks that rely on hearing or smell.</description>
+        </sheet>
+    </element>
+	
+	<element name="Regeneration" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_REGENERATION">
+		<description>
+			<p>At the start of each of your turns, you regain 1 hit point if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>At the start of each of your turns, you regain 1 hit point if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hybrid Transformation" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION">
+        <description>
+            <p>You learn to control the lycanthropic curse that lives in your blood. As an action, you can transform into your Hybrid form. This form lasts for 10 minutes. You drop all equipment and can no longer speak common. You can revert to your normal form earlier by using an action on your turn. You automatically revert to your normal form in you fall unconscious, drop to 0 hit points, or die.</p>
+            <p class="indent">You can use this feature twice. You regain expended uses when you finish a short or long rest. While you are transformed, you gain the following features:</p>
+            <p class="indent">
+                <b>
+                    <i>Feral Might. </i>
+                </b>You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Resilient Hide. </i>
+                </b>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered. You gain a +3 bonus to your AC.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Predatory Strikes. </i>
+                </b>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.
+            </p>
+            <p class="indent">Your unarmed strikes deal 1d10 slashing damage.</p>
+            <p class="indent">
+                <b>
+                    <i>Cursed Weakness. </i>
+                </b> You have vulnerability to damage from silvered weapons.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Bloodlust. </i>
+                </b>At the start of your turn, if you’ve taken any damage since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 10, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.
+            </p>
+            <p class="indent">If you are under an effect that prevents you from concentrating (like the Barbarian’s rage feature), you automatically fail this saving throw.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can transform into your Hybrid form. (2/SR)</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_FERAL_MIGHT" />
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE" />
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_PREDATORY_STRIKES" />
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_CURSED_WEAKNESS" />
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_BLOODLUST" />
+        </rules>
+    </element>
+	
+	<element name="Advanced Transformation" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_ADVANCED_TRANSFORMATION">
+        <description>
+            <p>Starting at 11th level, you learn to unleash and control more of the beast within. You can now transform into your hybrid form as a bonus action, and your hybrid transformation now lasts for up to 30 minutes.</p>
+            <p class="indent">In addition, your hybrid form gains the Lycan Regeneration and Beastly Precision features.</p>
+            <p class="indent">
+                <b>
+                    <i>Lycan Regeneration. </i>
+                </b> At the start of each of your turns, you regain hit points equal to 1 + your Constitution modifier (minimum of 1) if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Beastly Precision. </i>
+                </b> You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).
+            </p>
+        </description>
+        <sheet>
+            <description>You can now transform into your hybrid form as a bonus action, and your hybrid transformation now lasts for up to 30 minutes.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_LYCAN_REGENERATION" />
+            <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_BEASTLY_PRECISION" />
+			<grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_IMPROVED_PREDATORY_STRIKES" />
+        </rules>
+    </element>
+	
+	<!-- Hybrid Features -->
+    <element name="Feral Might" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_FERAL_MIGHT">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.</p>
+        </description>
+        <sheet>
+            <description>You gain a +{{feral might:damage}} bonus to melee damage rolls. You also have advantage on Strength checks and Strength saving throws.</description>
+        </sheet>
+        <rules>
+            <stat name="feral might:damage" value="proficiency:half" />
+        </rules>
+    </element>
+    <element name="Resilient Hide" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered. You gain a +3 bonus to your AC.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="3" />
+        </rules>
+    </element>
+    <element name="Predatory Strikes" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_PREDATORY_STRIKES">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.</p>
+            <p class="indent">Your unarmed strikes deal 1d6 slashing damage. This die increases to 1d8 at 11th level, and 1d10 at 18th level.</p>
+        </description>
+        <sheet>
+            <description>When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action. (+{{predatory strikes:attack}} vs AC, 1d{{predatory strikes:damage}+{{predatory strikes:attack:ability}})</description>
+        </sheet>
+        <rules>
+            <stat name="predatory strikes:attack:ability" value="strength:modifier" bonus="ability" />
+            <stat name="predatory strikes:attack:ability" value="dexterity:modifier" bonus="ability" />
+            <stat name="predatory strikes:attack" value="predatory strikes:attack:ability" />
+            <stat name="predatory strikes:attack" value="proficiency" />
+            <stat name="predatory strikes:damage" value="10" />
+        </rules>
+    </element>
+    <element name="Cursed Weakness" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_CURSED_WEAKNESS">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>You have vulnerability to damage from silvered weapons.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to damage from silvered weapons.</description>
+        </sheet>
+        <rules></rules>
+    </element>
+    <element name="Bloodlust" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_BLOODLUST">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>At the start of your turn, if you’ve taken any damage since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 10, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.</p>
+            <p class="indent">If you are under an effect that prevents you from concentrating (like the Barbarian’s rage feature), you automatically fail this saving throw.</p>
+        </description>
+        <sheet>
+            <description>At the start of your turn, if you’ve taken any damage since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 10, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you must move directly towards the nearest creature to you and use the Attack action against the creature. You then regain control for the remainder of your turn.</description>
+        </sheet>
+        <rules></rules>
+    </element>
+    <element name="Improved Predatory Strikes" type="Archetype Feature" source="Critical Role" id="ID_RACIAL_TRAIT_WEREWOLF_IMPROVED_PREDATORY_STRIKES">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>When you have an active rite while in your hybrid form, your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description>When you have an active rite while in your hybrid form, your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+        <rules></rules>
+    </element>
+    <element name="Lycan Regeneration" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_ORDER_OF_THE_LYCAN_LYCAN_REGENERATION">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>At the start of each of your turns, you regain hit points equal to 1 + your Constitution modifier (minimum of 1) if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+        </description>
+        <sheet>
+            <description>At the start of each of your turns, you regain {{lycan regeneration:hp}} hit points if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="lycan regeneration:hp" value="1" />
+            <stat name="lycan regeneration:hp" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Beastly Precision" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_ORDER_OF_THE_LYCAN_BEASTLY_PRECISION">
+        <supports>Hybrid Transformation Feature</supports>
+        <description>
+            <p>You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).</p>
+        </description>
+        <sheet>
+            <description>You gain a +{{proficiency:half}} bonus to melee attack rolls made with your unarmed strikes.</description>
+        </sheet>
+        <rules></rules>
+    </element>
+</elements>
