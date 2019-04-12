@@ -25,10 +25,10 @@
 			<stat name="charisma" value="1" />
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HEIGHTENED_SENSES" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_LYCAN_REGENERATION" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_CURSED_WEAKNESS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_BLOODLUST" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_MADNESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION" />
         </rules>
     </element>
 	
