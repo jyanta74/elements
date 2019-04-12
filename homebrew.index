@@ -8,6 +8,6 @@
 	</info>
 	<files>
 		<file name="reddit.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/reddit.index" />
-		<file name="dndbeyond.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/homebrew/dndbeyond.index" />
+		<file name="dndbeyond.index" url="https://raw.githubusercontent.com/jyanta74/elements/master/homebrew/dndbeyond.index" />
 	</files>
 </index>
