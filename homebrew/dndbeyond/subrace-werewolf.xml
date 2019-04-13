@@ -113,7 +113,6 @@
             <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_FERAL_MIGHT" />
             <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE" />
             <grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_PREDATORY_STRIKES" />  
-			<grant type="Archetype Feature" id="ID_RACIAL_TRAIT_WEREWOLF_BEASTLY_PRECISION" />
         </rules>
     </element>
 	
@@ -121,13 +120,12 @@
     <element name="Feral Might" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_FERAL_MIGHT">
         <supports>Hybrid Transformation Feature</supports>
         <description>
-            <p>Only in Hybrid Form. You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.</p>
+            <p>Only in Hybrid Form. You have advantage on Strength checks and Strength saving throws.</p>
         </description>
         <sheet>
-            <description>You gain a +{{feral might:damage}} bonus to melee damage rolls. You also have advantage on Strength checks and Strength saving throws.</description>
+            <description>You have advantage on Strength checks and Strength saving throws.</description>
         </sheet>
         <rules>
-            <stat name="feral might:damage" value="proficiency:half" />
         </rules>
     </element>
     <element name="Resilient Hide" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE">
@@ -147,24 +145,16 @@
             <p class="indent">Your unarmed strikes deal 1d10 slashing damage.</p>
         </description>
         <sheet>
-            <description>When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action. (+{{predatory strikes:attack}} vs AC, 1d10+{{predatory strikes:attack:ability}})</description>
+            <description>When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action. (+{{predatory strikes:attack}} vs AC, 1d10+{{predatory strikes:damage}})</description>
         </sheet>
         <rules>
             <stat name="predatory strikes:attack:ability" value="strength:modifier" bonus="ability" />
             <stat name="predatory strikes:attack:ability" value="dexterity:modifier" bonus="ability" />
             <stat name="predatory strikes:attack" value="predatory strikes:attack:ability" />
             <stat name="predatory strikes:attack" value="proficiency" />
-            <stat name="predatory strikes:damage" value="10" />
+			<stat name="predatory strikes:attack" value="proficiency:half" />
+			<stat name="predatory strikes:damage" value="predatory strikes:attack:ability" />
+			<stat name="predatory strikes:damage" value="proficiency:half" />
         </rules>
-    </element>
-    <element name="Beastly Precision" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_BEASTLY_PRECISION">
-        <supports>Hybrid Transformation Feature</supports>
-        <description>
-            <p>Only used in Hybrid Form. You gain a bonus to melee attack rolls made with your unarmed strikes equal to half of your proficiency bonus (rounded down).</p>
-        </description>
-        <sheet>
-            <description>You gain a +{{proficiency:half}} bonus to melee attack rolls made with your unarmed strikes.</description>
-        </sheet>
-        <rules></rules>
     </element>
 </elements>
