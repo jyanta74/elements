@@ -68,41 +68,41 @@
     </element>
     <element name="Bloodlust" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_BLOODLUST">
         <description>
-            <p>At the start of your turn, if you’ve taken any damage that drops you below 1/2 hitpoints since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 6, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you are forced to transform into Hybrid form (does not use Hybrid Transformation power). If already in Hybrid form, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.</p>
+            <p>At the start of your turn, if you’ve taken any damage that drops you below 1/2 hitpoints since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 6, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you are forced to transform into a Werewolf (does not use Werewolf Transformation power). If already in Werewolf form, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.</p>
         </description>
         <sheet>
-            <description>At the start of your turn, if you’ve taken any damage that drops you below 1/2 hitpoints since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 10, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you must move directly towards the nearest creature to you and use the Attack action against the creature. You then regain control for the remainder of your turn.</description>
+            <description>At the start of your turn, if you’ve taken any damage that drops you below 1/2 hitpoints since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 6, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you are forced to transform into a Werewolf (does not use Werewolf Transformation power). If already in Werewolf form, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.</description>
         </sheet>
         <rules></rules>
     </element>
 	<element name="Moon Madness" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_MADNESS">
         <description>
-            <p>The sight of the Moon drives the beast mad. Make a DC 15 Wisdom Save for every 10 minutes in moonlight.  If you fail, you transform into Hybrid form.  Every turn you are in Hybrid form while in Full Moon Light you trigger bloodlust.</p>
+            <p>The sight of the Moon drives the beast mad. Make a DC 15 Wisdom Save for every 10 minutes in moonlight.  If you fail, you transform into Werewolf form.  Every turn you are in Werewolf form while in Full Moon Light you trigger bloodlust.</p>
         </description>
         <sheet>
-            <description>The sight of the Moon drives the beast mad. Make a DC 15 Wisdom Save for every 10 minutes in moonlight.  If you fail, you transform into Hybrid form.  Every turn you are in Hybrid form while in Full Moon Light you trigger bloodlust.</description>
+            <description>At the start of your turn, if you’ve taken any damage that drops you below 1/2 hitpoints since the beginning of your last turn, you must make a Wisdom saving throw to maintain control. The DC equals 6, or half of the total damage you’ve taken from attacks since your last turn, whichever number is higher. On a failed save, you are forced to transform into a Werewolf (does not use Werewolf Transformation power). If already in Werewolf form, you must move directly towards the nearest creature to you and use the Attack action against the creature. If there is more than one possible target, the DM chooses the target. You then regain control for the remainder of your turn.</description>
         </sheet>
         <rules></rules>
     </element>
 	
-	<element name="Hybrid Transformation" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION">
+	<element name="Werewolf Transformation" type="Racial Trait" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_HYBRID_TRANSFORMATION">
         <description>
-            <p>You learn to control the lycanthropic curse that lives in your blood. As an action, you can transform into your Hybrid form. This form lasts for 30 minutes. You drop all equipment and can no longer speak common. You can revert to your normal form earlier by using an action on your turn. You automatically revert to your normal form in you fall unconscious, drop to 0 hit points, or die.</p>
+            <p>You learn to control the lycanthropic curse that lives in your blood. As an action, you can transform into your Werewolf form. This form lasts for 30 minutes. You drop all equipment and can no longer speak common. You can revert to your normal form earlier by using an action on your turn. You automatically revert to your normal form in you fall unconscious, drop to 0 hit points, or die.</p>
             <p class="indent">You can use this feature twice. You regain expended uses when you finish a short or long rest. While you are transformed, you gain the following features:</p>
             <p class="indent">
                 <b>
                     <i>Feral Might. </i>
-                </b>Only in Hybrid Form. You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.
+                </b>Only in Werewolf Form. You gain a bonus to melee damage rolls equal to half your proficiency bonus (rounded down). You also have advantage on Strength checks and Strength saving throws.
             </p>
             <p class="indent">
                 <b>
                     <i>Resilient Hide. </i>
-                </b>Only in Hybrid Form. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.
+                </b>Only in Werewolf Form. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.
             </p>
             <p class="indent">
                 <b>
                     <i>Predatory Strikes. </i>
-                </b>Only used in Hybrid Form. This attack is considered magical. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.
+                </b>Only used in Werewolf Form. This attack is considered magical. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.
             </p>
             <p class="indent">Your unarmed strikes deal 1d10 slashing damage.</p>
         </description>
@@ -118,9 +118,9 @@
 	
 	<!-- Hybrid Features -->
     <element name="Feral Might" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_FERAL_MIGHT">
-        <supports>Hybrid Transformation Feature</supports>
+        <supports>Werewolf Transformation Feature</supports>
         <description>
-            <p>Only in Hybrid Form. You have advantage on Strength checks and Strength saving throws.</p>
+            <p>Only in Werewolf Form. You have advantage on Strength checks and Strength saving throws.</p>
         </description>
         <sheet>
             <description>You have advantage on Strength checks and Strength saving throws.</description>
@@ -129,9 +129,9 @@
         </rules>
     </element>
     <element name="Resilient Hide" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_RESILIENT_HIDE">
-        <supports>Hybrid Transformation Feature</supports>
+        <supports>Werewolf Transformation Feature</supports>
         <description>
-            <p>Only in Hybrid Form. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</p>
+            <p>Only in Werewolf Form. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</p>
         </description>
         <sheet>
             <description>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered.</description>
@@ -139,9 +139,9 @@
         <rules></rules>
     </element>
     <element name="Predatory Strikes" type="Archetype Feature" source="DnD Beyond" id="ID_RACIAL_TRAIT_WEREWOLF_PREDATORY_STRIKES">
-        <supports>Hybrid Transformation Feature</supports>
+        <supports>Werewolf Transformation Feature</supports>
         <description>
-            <p>Only used in Hybrid Form. This attack is considered magical. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.</p>
+            <p>Only used in Werewolf Form. This attack is considered magical. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes. When you use the Attack action with an unarmed strike you can make another unarmed strike as a bonus action.</p>
             <p class="indent">Your unarmed strikes deal 1d10 slashing damage.</p>
         </description>
         <sheet>
